@@ -16,7 +16,7 @@ const isPalindrome = (x) => {
         const lastDigit = x % 10;
         // on the first pass through, reversedNumber will be the last digit
         // then on the second pass through, we take the first pass through's last digit which is reversedNumber
-        // and mulitply it by tena and also add the second pass through's last digit
+        // and multiply it by ten and also add the second pass through's last digit
         reversedNumber = reversedNumber * 10 + lastDigit;
         // take out the last digit from the original number (x) by getting the whole quotient number only
         // repeat until reversedNumber is equal to or greater than x
