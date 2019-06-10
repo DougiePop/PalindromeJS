@@ -10,7 +10,7 @@ const isPalindrome = (x) => {
     // then remove the last digit from the original number
     // After, we get the second last digit from the original number
     // we multiply the first last digit by 10 and add the second last digit to get our reversed number
-    // we repeat this until original number is less than or equal to the reversed number
+    // we repeat this as long as original number (x) is greater than the reversed number
     let reversedNumber = 0;
     while( x > reversedNumber ) {
         // get the last digit from the original number (x) passed into the function 
