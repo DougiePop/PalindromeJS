@@ -1,3 +1,4 @@
+// Use modulo operations to reverse the second half of original number and compare it with the first half
 const isPalindrome = (x) => {
     // EDGE cases
     // if the number is negative as -242 does not equal 242-
