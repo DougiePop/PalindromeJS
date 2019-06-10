@@ -2,7 +2,7 @@
 const isPalindrome = (x) => {
     // EDGE cases
     // if the number is negative as -242 does not equal 242-
-    // and if number has a zero as the last digit where x is not zero since zero by itself is a palindrome
+    // if number has a zero as the last digit where x is not zero, since zero by itself is a palindrome
     if (x < 0 || x % 10 === 0 && x !== 0) {
         return false;
     }
@@ -23,7 +23,10 @@ const isPalindrome = (x) => {
         // repeat until reversedNumber is equal to or greater than x
         x = Math.floor(x / 10)
     }
-    // if palindrome number has odd length, then just simply remove the middle number since it always equals itself and doesn't matter
+    // if palindrome number has odd length, then just simply remove the middle number 
+    // since middle number always equals itself and doesn't matter
+    // we do this by taking our odd Length reversed number and dividing it by 10
+    // and taking the whole quotient number only
     const oddLengthMiddleNumberRemoved = Math.floor(reversedNumber / 10);
     // return when first half of original number, now x, is equal to second half of which has been reversed in variable reversedNumber
     // or return when first half of original number, now x, is equal to second half of which palindrome number was an odd length in variable oddLengthMiddleNumberRemoved
