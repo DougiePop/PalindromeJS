@@ -20,7 +20,7 @@ const isPalindrome = (x) => {
         // and multiply it by ten and also add the second pass through's last digit
         reversedNumber = reversedNumber * 10 + lastDigit;
         // take out the last digit from the original number (x) by getting the whole quotient number only
-        // repeat until reversedNumber is equal to or greater than x
+        // repeat as long as reversed number is less than x
         x = Math.floor(x / 10)
     }
     // if palindrome number has odd length, then just simply remove the middle number 
